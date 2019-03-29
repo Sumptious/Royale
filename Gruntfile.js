@@ -167,7 +167,13 @@ module.exports = function(grunt) {
             targetC :{
                 files:{
                     'dist/js/index.min.js': [
-                        'js/uikit.min.js'
+                        'node_modules/jquery/dist/jquery.slim.min.js',
+                        'node_modules/popper.js/dist/umd/popper.min.js',
+                        'node_modules/bootstrap/dist/js/bootstrap.min.js',
+                        'node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js',
+                        'js/uikit.min.js',
+                        'js/index.js'
+                        
                     ]
                 }
             }
