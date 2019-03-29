@@ -135,6 +135,9 @@ input, select, .input-group-text{
     background-color: rgb(1, 1, 34);
     
 }
+.display-Modal{
+    background-color: rgb(1, 1, 34,0.7); 
+}
 .flex{
     display: flex;
     flex-wrap: wrap;
@@ -167,7 +170,7 @@ input, select, .input-group-text{
 .myForm{
     color: #fff;
 }
-.sp-btn{
+#button, .sp-btn{
     background: #e68a00;
     color: #fff;
 }
@@ -220,6 +223,6 @@ input, select, .input-group-text{
         background: #fff !important;
     }
     .grid{
-        grid-template-rows:  80px 15% 820px 1fr 800px;
+        grid-template-rows:  80px 15% 850px 1fr 800px;
     }
 }

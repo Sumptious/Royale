@@ -18,6 +18,6 @@ $(document).ready(function () {
   $('.datepicker').datepicker({
      format:'mm-dd-yy',
      autoclose: true,
-     dayhighlight: true
+     todayHighlight: true
   });
 });

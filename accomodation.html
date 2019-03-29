@@ -25,8 +25,8 @@
     <div class="grid">
         <nav class="navbar navbar-expand-sm">
             <div class="container nav background">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler sp-btn" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span id="button" class="fa fa-bars "></span>
                 </button>
                 <a class="navbar-brand mr-auto" href="#"><h3 class="title">Royal Suite</h3></a>
                 <div class="collapse navbar-collapse" id="Navbar">
@@ -40,6 +40,74 @@
                 </div>
             </div>
         </nav>
+        <div class="modal fade display-Modal" id="booking" role="dialog">
+                <div class="modal-dialog" role="content">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                                <h1 class="text-center">BOOK YOUR ROOM</h1>
+                                <button type="button" class="close" data-dismiss="modal">
+                                    &times;
+                                </button> 
+                        </div>
+                        <div class="modal-body">
+                                <form method="" action="" role="form">
+                                    <div class="form-row">
+                                    <div class="col-12 form-group">
+                                        <div class="input-group mb-3">
+                                            <input type='text' value="" id="" class="form-control datepicker" placeholder="Check In"/>
+                                                <div class="input-group-append">
+                                                    <div class="input-group-text">
+                                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 form-group">
+                                       <select class="wide form-control">
+                                            <option data-display="Adult">Adult</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3+</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 form-group">
+                                        <select class="wide form-control">
+                                            <option data-display="Child">Children</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3+</option>
+                                        </select>
+                                    </div>
+                                </div>     
+                                 <div class="form-row">
+                                    <div class="col-12  form-group">
+                                        <div class="input-group mb-3">
+                                            <input type='text' class="form-control datepicker" placeholder="Check Out"/>
+                                                <div class="input-group-append">
+                                                    <div class="input-group-text">
+                                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 form-group">
+                                        <select class="wide form-control">
+                                            <option data-display="Child">Room</option>
+                                            <option value="1">Luxury Single Deluxe Suite</option>
+                                            <option value="2">Double Deluxe Room</option>
+                                            <option value="3">Budget Suite</option>
+                                            <option value="4">Honeymoon Suite</option>
+                                        </select>
+                                    </div>
+                                <div class="col-12 form-group">
+                                    <button type="submit" class="btn sp-btn form-control">BOOK NOW</button>
+                                </div>
+                            </div>   
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div> 
     <header class="header" style="background-image: url('image/rooms.jpg'); background-size: cover;
     background-attachment:fixed;">
         <section class="breadcrumb_area">
@@ -60,12 +128,12 @@
             <div class="row row-content align-items-center mt-5 py-5">
                 <div class="col-12 col-md-3">
                     <div class="myForm">
-                        <h2 class="">BOOK <br>YOUR ROOM</h2>
+                        <h2 class="">BOOK YOUR ROOM </h2>
                     </div>
                 </div>
                 <div class="col-12 col-md-9">
                     <div class="">
-                        <form method="post" action="/accomodation.html" role="form">
+                        <form method="" action="" role="form">
                             <div class="form-row">
                                 <div class="col-12 col-md-4 form-group">
                                     <div class="input-group mb-3">
@@ -135,7 +203,7 @@
                 <div class="col-md-6">
                     <figure>
                         <img src="image/room_1.jpg" style="width:100%;" uk-scrollspy=" cls:uk-animation-scale-down; repeat:true">
-                            <a class="btn sp-btn content" id="book" data-toggle="modal" data-target="#reservation">
+                            <a class="btn sp-btn content" id="book" data-toggle="modal" data-target="#booking">
                                 BOOK NOW
                             </a>
                             <figcaption class="text-center">
@@ -150,7 +218,7 @@
                     <div>
                         <figure>
                             <img src="image/room_2.jpg" style="width:100%;" uk-scrollspy=" cls:uk-animation-scale-down; repeat:true">
-                            <a class="btn sp-btn content" id="book" data-toggle="modal" data-target="#reservation">
+                            <a class="btn sp-btn content" id="book" data-toggle="modal" data-target="#booking">
                                 BOOK NOW
                             </a>
                             <figcaption class="text-center">
@@ -167,7 +235,7 @@
                 <div class="col-md-6">
                     <figure>
                         <img src="image/room_3.jpg" style="width:100%;" uk-scrollspy=" cls:uk-animation-slide-top; repeat:true">
-                            <a class="btn sp-btn content" id="book" data-toggle="modal" data-target="#reservation">
+                            <a class="btn sp-btn content" id="book" data-toggle="modal" data-target="#booking">
                                 BOOK NOW
                             </a>
                         <figcaption class="text-center">
@@ -182,7 +250,7 @@
                     <div>
                         <figure>
                             <img src="image/room_4.jpg" style="width:100%;" uk-scrollspy=" cls:uk-animation-slide-top; repeat:true">
-                                <a class="btn sp-btn content" id="book" data-toggle="modal" data-target="#reservation">
+                                <a class="btn sp-btn content" id="book" data-toggle="modal" data-target="#booking">
                                     BOOK NOW
                                 </a>
                             <figcaption class="text-center">
@@ -199,7 +267,7 @@
                 <div class="col-md-6">
                     <figure>
                         <img src="image/offer_4.jpg" style="width:100%;" uk-scrollspy=" cls:uk-animation-slide-left-medium; repeat:true">
-                            <a class="btn sp-btn content" id="book" data-toggle="modal" data-target="#reservation">
+                            <a class="btn sp-btn content" id="book" data-toggle="modal" data-target="#booking">
                                 BOOK NOW
                             </a>
                         <figcaption class="text-center">
@@ -214,12 +282,12 @@
                     <div>
                         <figure>
                             <img src="image/sidebar.jpg" style="width:100%;" uk-scrollspy=" cls:uk-animation-slide-right-medium; repeat:true">
-                                <a class="btn sp-btn content" id="book" data-toggle="modal" data-target="#reservation">
+                                <a class="btn sp-btn content" id="book" data-toggle="modal" data-target="#booking">
                                         BOOK NOW
                                 </a>
                             <figcaption class="text-center">
                                 <h4>
-                                    Budget Suite <br>
+                                    Honeymoon Suite <br>
                                     <span>$250/night</span> 
                                 </h4>
                             </figcaption>

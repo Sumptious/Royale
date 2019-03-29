@@ -134,16 +134,16 @@ input, select, textarea{
 .btn-primary{
     border: none;
 }
-.sp-btn{
+#button, .sp-btn{
     background: #e68a00;
     color: #fff;
 }
 .btn-social-icon, .btn-social-icon:hover{
     color: rgba(228, 226, 243, 0.7) !important;
 }
-/* h2, h3{
-    color:#fff !important;
-} */
+.myEmail{
+    border: 1px solid rgba(228, 226, 243, 0.7) !important;
+}
 .email{
     background: #e68a00 !important;
     color: #fff;
@@ -153,7 +153,7 @@ input, select, textarea{
 }
 @media only screen and (max-width:425px) {
     .grid{
-        grid-template-rows: 80px 450px 1fr 700px;
+        grid-template-rows: 80px 450px 1fr 22%;
     }
     .background{
         background: #fff !important;
