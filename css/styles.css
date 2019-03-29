@@ -37,7 +37,7 @@ form{
 .content{
     content: "";
     top: 20%;
-    left: 25%;
+    left: 20%;
     position: absolute;
     display: block;
     z-index: 1;
